@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karam.demo1.MainActivity"
+    android:background="@drawable/helpp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c6000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUPPORT GROUP"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/first_text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anything is possible when you have"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/first_text"
+        android:id="@+id/sec_text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the right people there to support you."
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sec_text"
+        android:id="@+id/third_text"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="LOGIN"
+         android:textColor="#000"
+         android:layout_weight="1"
+         android:background="#fff"
+         android:textSize="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:onClick="login"
+         android:id="@+id/button_login"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:layout_weight="1"
+            android:background="#ed68bced"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+             />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
