@@ -8,14 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".splash_layout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".login_layout" />
+        <activity android:name=".home_layout" />
+        <activity android:name=".sign_up_layout" />
+        <activity android:name=".verify_layout" />
+        <activity android:name=".Signup_details"></activity>
     </application>
 
 </manifest>

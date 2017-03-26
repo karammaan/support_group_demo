@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.karam.demo1.MainActivity"
+    tools:context="com.example.karam.demo1.splash_layout"
     android:background="@drawable/gradient_rect"
     >
 
@@ -17,9 +17,9 @@
         android:text="SUPPORT GROUP"
         android:textSize="30dp"
         android:textColor="#fff"
-       android:layout_centerHorizontal="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:id="@+id/first_text"/>
+        android:id="@+id/first_text" />
 
 
     <TextView
@@ -30,7 +30,7 @@
         android:textColor="#fff"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/first_text"
+        android:layout_below="@+id/first_text"
         android:id="@+id/sec_text"/>
 
 
@@ -55,6 +55,7 @@
             android:layout_marginTop="30dp"
             android:text="HELP"
             android:id="@+id/help_id"
+
             />
 
     <TextView
@@ -90,6 +91,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="GUIDANCE"
+
         />
 
 
@@ -122,6 +124,8 @@
             android:layout_marginRight="10dp"
             android:textColor="#fff"
             android:textSize="20dp"
+            android:onClick="signup"
+            android:id="@+id/button_signup"
              />
 
     </LinearLayout>
