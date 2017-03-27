@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#c0e7a0a0">
+                android:background="#c3e7a0a0">
 
             <LinearLayout
                 android:layout_width="match_parent"
