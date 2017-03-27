@@ -20,7 +20,8 @@
         <activity android:name=".sign_up_layout" />
         <activity android:name=".verify_layout" />
         <activity android:name=".Signup_details" />
-        <activity android:name=".profile_edit_layout"></activity>
+        <activity android:name=".profile_edit_layout" />
+        <activity android:name=".all_group"></activity>
     </application>
 
 </manifest>
