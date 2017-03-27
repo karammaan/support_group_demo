@@ -2,13 +2,14 @@
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
+    android:background="@drawable/mensupport"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dafd7db0">
+        android:background="#b7f9cbdd">
 
     </RelativeLayout>
 
@@ -42,6 +43,8 @@
            android:src="@drawable/cartoon"
            android:layout_marginLeft="20dp"
            android:layout_marginTop="20dp"
+           android:onClick="edit_profile_layout"
+           android:id="@+id/profile_layout"
            />
 
         <TextView
