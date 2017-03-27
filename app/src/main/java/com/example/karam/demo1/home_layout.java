@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class home_layout extends AppCompatActivity {
 
@@ -12,7 +13,7 @@ public class home_layout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_layout);
-        Button login= (Button) findViewById(R.id.profile_layout);
+        ImageView login= (ImageView) findViewById(R.id.profile_layout);
 
         final View.OnClickListener onbtn_click= new View.OnClickListener() {
             @Override
