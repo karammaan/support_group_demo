@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content"
                     android:text="ADDICTION"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                   />
 
             </LinearLayout>
@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:text="CANCER"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
 
             </LinearLayout>
@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:text="DOMESTIC VOILANCE"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
 
             </LinearLayout>
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:text="EATING DISORDER"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
 
             </LinearLayout>
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:text="FEMALE FORTICIDE"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
 
             </LinearLayout>
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:text="GREIf"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
 
             </LinearLayout>
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:text="INFERTILITY"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
 
             </LinearLayout>
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:text="MOOD DISORDER"
                 android:textColor="#000"
-                android:textSize="30dp"
+                android:textSize="15dp"
                 />
         </LinearLayout>
             <LinearLayout
@@ -177,7 +177,7 @@
                     android:layout_height="wrap_content"
                     android:text="SUCIDE PREVENTION"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
             </LinearLayout>
 
@@ -195,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:text="SLEEP DISORDER"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
             </LinearLayout>
 
@@ -213,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:text="SEXUAL ABUSE SURVIVAL"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="15dp"
                     />
             </LinearLayout>
         </LinearLayout>
