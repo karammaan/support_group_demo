@@ -52,9 +52,7 @@
                 android:layout_marginRight="20dp"
                 android:orientation="horizontal"
                 android:background="#c1cccccc"
-                android:padding="15dp"
-
-                >
+                android:padding="15dp">
 
                 <ImageView
                     android:layout_width="20dp"

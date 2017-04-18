@@ -37,7 +37,7 @@ public class home_layout extends AppCompatActivity {
 
 
                     startActivity(i);
-
+                    finish();
 
                 }
 
@@ -49,5 +49,11 @@ public class home_layout extends AppCompatActivity {
         login.setOnClickListener(onbtn_click);
         allgroups.setOnClickListener(onbtn_click);
     }
+    public void button_press(View v){
+        Intent i = new Intent(home_layout.this ,my_groups.class);
+
+        startActivity(i);
+    }
+
 }
 

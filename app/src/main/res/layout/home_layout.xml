@@ -9,8 +9,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#b7f9cbdd"
+        android:background="#c1d2cfcf"
         >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fabbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="40dp"
+            android:onClick="button_press"
+            android:id="@+id/image_button"
+            />
 
     </RelativeLayout>
 

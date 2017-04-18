@@ -42,7 +42,8 @@
             android:background="@null"
             android:textColorHint="#000"
             android:textSize="15dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:id="@+id/username_id"/>
 
 
     </LinearLayout>
@@ -71,7 +72,8 @@
                 android:textSize="15dp"
                 android:background="@null"
                 android:textColor="#000"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                android:id="@+id/gender_id"/>
 
 
         </LinearLayout>
@@ -99,7 +101,8 @@
                     android:textSize="15dp"
                     android:background="@null"
                     android:textColor="#000"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/password_id"/>
 
 
             </LinearLayout>
@@ -127,7 +130,8 @@
                     android:textSize="15dp"
                     android:background="@null"
                     android:layout_marginLeft="20dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:id="@+id/confirm_password_id"/>
 
 
             </LinearLayout>
@@ -144,7 +148,7 @@
                 android:text="DONE"
                 android:background="#c8817f7f"
                 android:id="@+id/finish_layout"
-                android:onClick="finish_button"/>
+                android:onClick="register"/>
 
 
 

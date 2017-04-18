@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class sign_up_layout extends AppCompatActivity {
@@ -13,26 +15,32 @@ public class sign_up_layout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_layout);
-        Button verify_button = (Button) findViewById(R.id.verify_login);
+    }
 
-        final View.OnClickListener onbtn_click= new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(v.getId() == R.id.verify_login)
-                {
-                    Intent i = new Intent(sign_up_layout.this , verify_layout.class);
+    public void verify_button(View v) {
 
 
-                    startActivity(i);
+        EditText mobile_id = (EditText) findViewById(R.id.mobile_id);
 
+        String mobile = mobile_id.getText().toString();
 
-                }
+        if (mobile.length() < 10) {
+            Toast.makeText(sign_up_layout.this, "please enter valid mobile number", Toast.LENGTH_SHORT).show();
 
+            return;
+        }
 
-            }
-        };
+        int randompin =   (int) (((Math.random())*9000)+1000);
 
-        verify_button.setOnClickListener(onbtn_click);
+        Intent i = new Intent(sign_up_layout.this , verify_layout.class);
+
+        i.putExtra("mobile_key" , mobile);
+
+        i.putExtra("pin_key" , randompin);
+
+        startActivity(i);
+        finish();
+
     }
 }
 
