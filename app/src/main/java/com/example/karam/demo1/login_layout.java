@@ -48,6 +48,7 @@ public class login_layout extends AppCompatActivity {
         login.setOnClickListener(onbtn_click);
     }
 
+
     public void login()
     {
         String mobile = mobile_et.getText().toString();
@@ -62,7 +63,7 @@ public class login_layout extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        JsonObjectRequest jobreq = new JsonObjectRequest("http://192.168.0.65/login.php", job, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobreq = new JsonObjectRequest("http://"+Internet_address.ip+"/login.php", job, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 
@@ -106,6 +107,11 @@ public class login_layout extends AppCompatActivity {
         AppController app = new AppController(login_layout.this);
 
         app.addToRequestQueue(jobreq);
+    }
+    public void forgot_pass(View v){
+        Intent i = new Intent(login_layout.this , user_forgot_password.class);
+
+        startActivity(i);
     }
 }
 

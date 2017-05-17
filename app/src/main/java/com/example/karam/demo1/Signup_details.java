@@ -1,6 +1,7 @@
 package com.example.karam.demo1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,32 +20,32 @@ import org.json.JSONObject;
 public class Signup_details extends AppCompatActivity {
 
     String mobile ;
-    EditText username_id , gender_id , password_id , confirm_password_id;
+    EditText username_et , gender_et , password_et , confirm_password_et;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_details);
 
-        mobile = getIntent().getStringExtra("mobile_key");
+        mobile= getIntent().getStringExtra("mobile_key");
 
-         username_id=(EditText) findViewById(R.id.username_id);
-         gender_id=(EditText) findViewById(R.id.gender_id);
-         password_id=(EditText) findViewById(R.id.password_id);
-        confirm_password_id=(EditText) findViewById(R.id.confirm_password_id);
+         username_et=(EditText) findViewById(R.id.username_id);
+         gender_et=(EditText) findViewById(R.id.gender_id);
+         password_et=(EditText) findViewById(R.id.password_id);
+        confirm_password_et=(EditText) findViewById(R.id.confirm_password_id);
 
 
     }
 
     public void register(View v)
     {
-        String username = username_id.getText().toString();
+        String username = username_et.getText().toString();
 
-        String gender = gender_id.getText().toString();
+        String gender = gender_et.getText().toString();
 
-        String password = password_id.getText().toString();
+        String password = password_et.getText().toString();
 
-        String confirm_password = confirm_password_id.getText().toString();
+        String confirm_password = confirm_password_et.getText().toString();
 
         if(username.equals(""))
         {
@@ -82,7 +83,7 @@ public class Signup_details extends AppCompatActivity {
 
         try {
             job.put("name_key" , username);
-            job.put("mobile_key" , mobile);
+            job.put("mobile_key", mobile);
             job.put("pass_key", password);
             job.put("gender_key" , gender);
 
@@ -92,13 +93,19 @@ public class Signup_details extends AppCompatActivity {
 
         System.out.println(job);
 
-        JsonObjectRequest jobreq = new JsonObjectRequest("http://192.168.0.24/signup.php", job, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobreq = new JsonObjectRequest("http://"+Internet_address.ip+"/signup.php", job, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 
                 try {
                     if(response.getString("key").equals("1"))
                     {
+
+                        SharedPreferences.Editor sp = getSharedPreferences("user_info",MODE_PRIVATE).edit();
+
+                        sp.putString("user_id",response.getString("user_id"));
+
+                        sp.commit();
                         Intent i = new Intent(Signup_details.this , home_layout.class);
                         startActivity(i);
                         finish();
@@ -106,15 +113,19 @@ public class Signup_details extends AppCompatActivity {
 
                     else {
 
+
                     }
 
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
+                System.out.println(error);
 
             }
         });

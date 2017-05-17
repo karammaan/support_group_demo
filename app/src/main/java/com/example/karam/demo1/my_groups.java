@@ -18,13 +18,14 @@ import org.json.JSONObject;
 
 public class my_groups extends AppCompatActivity {
     EditText group_name , group_cause , description;
-    Button create_group;
+    Button createe_group;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_groups);
+        createe_group = (Button)  findViewById(R.id.create_button);
         group_name = (EditText) findViewById(R.id.first_edit_text);
 
         group_cause=(EditText) findViewById(R.id.second_edit_text);
@@ -56,7 +57,7 @@ public class my_groups extends AppCompatActivity {
 
         System.out.println(jobj);
 
-        JsonObjectRequest jobjreq = new JsonObjectRequest("http://192.168.0.65/add_group.php", jobj, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobjreq = new JsonObjectRequest("http://"+Internet_address.ip+"/add_group.php", jobj, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 System.out.println(response);

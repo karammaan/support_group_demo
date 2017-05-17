@@ -38,8 +38,19 @@ public class splash_layout extends AppCompatActivity {
                 }
             }
         };
-
         login.setOnClickListener(onbtn_click);
         signup.setOnClickListener(onbtn_click);
+    }
+    public void signup(View v){
+        Intent i = new Intent(splash_layout.this , expert_signup.class);
+
+
+        startActivity(i);
+    }
+    public void login(View v){
+        Intent i = new Intent(splash_layout.this , expert_login_layout.class);
+
+
+        startActivity(i);
     }
 }

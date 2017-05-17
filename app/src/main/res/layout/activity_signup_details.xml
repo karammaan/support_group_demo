@@ -41,6 +41,8 @@
             android:textColor="#000"
             android:background="@null"
             android:textColorHint="#000"
+            android:inputType="textPersonName"
+            android:imeOptions="actionDone"
             android:textSize="15dp"
             android:layout_marginLeft="20dp"
             android:id="@+id/username_id"/>
@@ -71,6 +73,7 @@
                 android:textColorHint="#000"
                 android:textSize="15dp"
                 android:background="@null"
+                android:imeOptions="actionDone"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
                 android:id="@+id/gender_id"/>
@@ -100,6 +103,8 @@
                     android:textColorHint="#000"
                     android:textSize="15dp"
                     android:background="@null"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
                     android:textColor="#000"
                     android:layout_marginLeft="20dp"
                     android:id="@+id/password_id"/>
@@ -131,6 +136,8 @@
                     android:background="@null"
                     android:layout_marginLeft="20dp"
                     android:textColor="#000"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
                     android:id="@+id/confirm_password_id"/>
 
 
@@ -144,7 +151,7 @@
                 android:layout_marginRight="20dp"
                 android:padding="15dp"
                 android:textColor="#fff"
-                android:textSize="20dp"
+                android:textSize="10dp"
                 android:text="DONE"
                 android:background="@drawable/create_group"
                 android:id="@+id/finish_layout"
